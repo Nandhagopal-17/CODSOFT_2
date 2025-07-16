@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ng_Works</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #F9FAFB;
+  color: #1f2937;
+  scroll-behavior: smooth;
+}
+.logo_1{
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+}
+
+header {
+  background-color: #000000;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.logo {
+  height: 50px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #10B981;
+}
+
+.hero {
+  height: 90vh;
+  background-color:	#eaeae8a0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero .overlay {
+  background-color: #e091b3;
+  padding: 100px;
+  color: #000000;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-shadow: 4px 2px 2px red;
+}   
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 12px 25px;
+  background-color:  #d21944cc;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #000;
+  transform: scale(1.05);
+}
+
+.section {
+  padding: 100px 20px;
+  text-align: center;
+  background-color: #D4F1F4;
+}
+.section h2{
+    text-shadow: 3px 2px 2px #EF4444;
+}
+.services-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  
+}
+.services-container1 {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  flex-flow: row;
+ 
+  flex-wrap: wrap;
+  margin-top: 30px;
+  
+}
+hr{
+    color: #05445e;
+    font-weight: bolder;
+}
+.card {
+  background-color: #189AB4;
+  color: black;
+  padding: 30px;
+  margin: 15px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links img {
+  width: 30px;
+  margin: 0 20px;
+  transition: transform 0.3s;
+}
+
+.social-links img:hover {
+  transform: scale(1.4);
+}
+.linked{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 10px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #222;
+  color: #fff;
+}
+strong{
+    position: relative;
+    right: 280px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: larger;
+    font-weight: bold;
+}
+span{
+    color: red;
+}
+#services{
+    color: #EF4444	;
+}
+#contact{
+    color: #05445e;
+}
+.last{
+  background-color: #e89f45	;
+}
+.regist{
+  background-color: rgb(222, 125, 56);
+}
+.order-form{
+  text-align: center;
+}
+ form{
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+
+} 
+.order-form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  max-width: 400px;
+  width: 100%;
+   position: relative;
+  left: 150px;
+}
+.order-form h2 {
+  margin-bottom: 20px;
+  color: #002D62;
+  text-align: center;
+}
+
+.order-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.order-form input,
+.order-form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.order-form button {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #FF6F61;
+  color: #ffffff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.order-form button:hover {
+  background-color: #e85a4f;
+}
+.to-order{
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  text-align: center;
+}
+.descript{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  font-style: italic;
+  color: rgb(212, 83, 36);
+  word-spacing: 2px;
+  position: relative;
+  top: 130px;
+  text-shadow:  2px 1px 1px #d45324 ;
+  
+}
+.descript h4{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+  font-style: italic;
+  color: rgb(20, 107, 236);
+  word-spacing: 2px;
+  line-height: 4rem;
+   text-shadow:  2px 1px 1px rgb(20, 107, 236) ;
+  
+}
+#contact h2{
+  text-shadow: 	3px 2px 2px #df863e;
+}
+
+</style>
+<body>
+
+  <header>
+    <img class="logo_1" src="logo.png" alt="ShopMate Logo" class="logo"><strong>NG_<span>Works</span> </strong>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <a href="#orders">Order a Work</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="overlay">
+      <h1>Welcome to NG_Works</h1>
+      <p>Your one-stop solution for top-Notch work and services.</p>
+      <a href="#" class="btn">Explore Now</a>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="services-container">
+      <div class="card">
+        <h3>Project Work</h3>
+        <p>Your Projects can be Done perfectly By NG_Works</p>
+      </div>
+      <div class="card">
+        <h3>Delivery Available</h3>
+        <p>Integrated real-time order tracking for customers.</p>
+      </div>
+      <div class="card">
+        <h3>Customer Support</h3>
+        <p>24/7 email and chatbot assistance for your buyers.</p>
+      </div>
+    </div>
+    <div class="services-container1">
+     <div class="card">
+        <h3>Presentation Works </h3>
+        <p>Creating a Pitch-ready presentations </p>
+      </div>
+      <div class="card">
+        <h3> Assignment Works </h3>
+        <p>Crafting high-impact business documents </p>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section class="to-order" id="orders">
+  <div class="order-form">
+    <h2>Order a Work</h2>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="mobile">Mobile No</label>
+      <input type="tel" id="mobile" name="mobile" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="work-type">Type of Work</label>
+      <select id="work-type" name="work-type" required>
+        <option value="">Select Work</option>
+        <option value="presentation">Presentation</option>
+        <option value="project">Project</option>
+        <option value="assignment">Assignment</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <div class="descript">
+    <h3>Get your customized assignment, project, or presentation delivered with precision and creativity.</h3>
+    <h3>Get tailor-made solutions for your project, assignment, or presentation—all delivered with expertise and flair.</h3>
+    <h4>Place Your Order</h4>
+  </div>
+  </section>
+  <section id="contact" class="section">
+    <h2>Connect with Us</h2>
+    <p>Email: vishnunandhu2003@gmail.com</p>
+    <div class="social-links">
+      <a href="#"><img src="./facebook_PhotoGrid.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com/nandhagopal_nandha"><img src="./insta_PhotoGrid.png" alt="Instagram"></a>
+      <a href="https://www.linkedin.com/in/nandhagopal17/"><img class="linked" src="./linkedin.png" alt="LinkedIn"></a>
+    </div>
+  </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 NG_Works. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
